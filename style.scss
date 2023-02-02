@@ -165,35 +165,39 @@ header {
             }
         }
         // mediaquery for the header section
+    }
     @media screen and (max-width:750px){
         
-            .navbar {
-                display: flex;
-                flex-direction: column;
-                position: fixed;
-                width: 75px;
-                top: 4.7rem;
-                margin-left: 15px;
-                left: -100%;
-                text-align: center;
-                transition: var(--transition);
-                z-index: 2;
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            width: 75px;
+            top: 4.7rem;
+            margin-left: 15px;
+            left: -100%;
+            text-align: center;
+            transition: var(--transition);
+            z-index: 2;
 
-                .navitem {
-                    display: grid;
-                    position: relative;
-                    grid-template-rows: auto;
-                    margin-bottom: 10px;
+            .navitem {
+                display: grid;
+                position: relative;
+                grid-template-rows: auto;
+                margin-bottom: 10px;
 
-                    &:hover, &.active {
-                        transform: translateY(3px);
-                    }
-
+                &:hover, &.active {
+                    transform: translateY(3px);
                 }
-                &.show {
-                    left: 0;
-                }
+
             }
+            &.show {
+                left: 0;
+            }
+        }
+
+        .mobile-toggle {
+            display: block;
         }
     }
 

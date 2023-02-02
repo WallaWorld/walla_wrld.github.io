@@ -147,7 +147,7 @@ header .container .mobile-toggle.active {
   background-position: center;
 }
 @media screen and (max-width: 750px) {
-  header .container .navbar {
+  header .navbar {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -159,16 +159,19 @@ header .container .mobile-toggle.active {
     transition: var(--transition);
     z-index: 2;
   }
-  header .container .navbar .navitem {
+  header .navbar .navitem {
     display: grid;
     position: relative;
     grid-template-rows: auto;
     margin-bottom: 10px;
   }
-  header .container .navbar .navitem:hover, header .container .navbar .navitem.active {
+  header .navbar .navitem:hover, header .navbar .navitem.active {
     transform: translateY(3px);
   }
-  header .container .navbar.show {
+  header .navbar.show {
     left: 0;
+  }
+  header .mobile-toggle {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
