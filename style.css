@@ -188,18 +188,14 @@ header .container .mobile-toggle.active {
   }
 }
 
-main {
-  width: 100%;
-  height: 100%;
-}
-main #slideshow {
+#slideshow {
   position: relative;
   width: 100vw;
   margin-top: 3rem;
   margin: auto;
   background-color: var(--cyn-clr);
 }
-main #slideshow .slider {
+#slideshow .slider {
   position: relative;
   background: var(--bg-clr);
   width: 80%;
@@ -208,7 +204,7 @@ main #slideshow .slider {
   overflow: hidden;
   border-radius: var(--boxradius1);
 }
-main #slideshow .slider .slide {
+#slideshow .slider .slide {
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -216,7 +212,7 @@ main #slideshow .slider .slide {
   -webkit-clip-path: circle(0% at 0 50%);
           clip-path: circle(0% at 0 50%);
 }
-main #slideshow .slider .slide img {
+#slideshow .slider .slide img {
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -224,7 +220,7 @@ main #slideshow .slider .slide img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-main #slideshow .slider .slide .info {
+#slideshow .slider .slide .info {
   z-index: 2;
   position: absolute;
   width: 75%;
@@ -239,20 +235,20 @@ main #slideshow .slider .slide .info {
   border-radius: var(--boxradius2);
   box-shadow: 0 5px 25px rgba(1, 1, 1, 0.05);
 }
-main #slideshow .slider .slide .info h2 {
+#slideshow .slider .slide .info h2 {
   font-size: var(--size-600);
   font-weight: 100;
 }
-main #slideshow .slider .slide .info p {
+#slideshow .slider .slide .info p {
   font-size: var(--size-400);
   font-weight: 400;
 }
-main #slideshow .slider .slide.active {
+#slideshow .slider .slide.active {
   -webkit-clip-path: circle(150% at 0 50%);
           clip-path: circle(150% at 0 50%);
   transition: var(--transition);
 }
-main #slideshow .navigation {
+#slideshow .navigation {
   height: 400px;
   display: flex;
   align-items: center;
@@ -260,10 +256,10 @@ main #slideshow .navigation {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-main #slideshow:hover .navigation {
+#slideshow:hover .navigation {
   opacity: 1;
 }
-main #slideshow .prev-btn, main #slideshow .next-btn {
+#slideshow .prev-btn, #slideshow .next-btn {
   z-index: 999;
   font-size: 2em;
   color: var(--bg-clr);
@@ -271,20 +267,20 @@ main #slideshow .prev-btn, main #slideshow .next-btn {
   padding: 20px;
   cursor: pointer;
 }
-main #slideshow .next-btn {
+#slideshow .next-btn {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-main #slideshow .prev-btn {
+#slideshow .prev-btn {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-main #slideshow .navisibility {
+#slideshow .navisibility {
   z-index: 999;
   display: flex;
   justify-content: center;
 }
-main #slideshow .navisibility .slide-icon {
+#slideshow .navisibility .slide-icon {
   z-index: 999;
   background: var(--bg1-clr);
   width: 20px;
@@ -294,10 +290,11 @@ main #slideshow .navisibility .slide-icon {
   border-radius: 2px;
   box-shadow: 0 5px 25px rgba(1, 1, 1, 0.2);
 }
-main #slideshow .navisibility .slide-icon.active {
+#slideshow .navisibility .slide-icon.active {
   background-color: orange;
 }
-main #featuring {
+
+#featuring {
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -309,7 +306,7 @@ main #featuring {
   background-color: var(--bg-color2);
   padding: 10px;
 }
-main #featuring .mine {
+#featuring .mine {
   position: relative;
   width: 280px;
   height: 320px;
@@ -322,63 +319,63 @@ main #featuring .mine {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-main #featuring .mine:nth-child(2) {
+#featuring .mine:nth-child(2) {
   background-image: url(/assets/amir.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main #featuring .mine:nth-child(3) {
+#featuring .mine:nth-child(3) {
   background-image: url(/assets/mi\ key1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main #featuring .mine:nth-child(4) {
+#featuring .mine:nth-child(4) {
   background-image: url(/assets/modeeh.jpg);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
 }
-main #featuring .mine:nth-child(5) {
+#featuring .mine:nth-child(5) {
   background-image: url(/assets/mrRee.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main #featuring .mine:nth-child(6) {
+#featuring .mine:nth-child(6) {
   background-image: url(/assets/jus.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main #featuring .mine:nth-child(7) {
+#featuring .mine:nth-child(7) {
   background-image: url(/assets/dechVid.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main #featuring .mine:nth-child(8) {
+#featuring .mine:nth-child(8) {
   background-image: url(/assets/);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-main #featuring .mine .info {
+#featuring .mine .info {
   position: relative;
   text-align: center;
   text-transform: capitalize;
 }
-main #featuring .mine .info h2 {
+#featuring .mine .info h2 {
   font-family: cursive;
   font-weight: 700;
   color: var(--a-color);
 }
-main #featuring .mine .info .social {
+#featuring .mine .info .social {
   position: relative;
   bottom: 5px;
 }
-main #featuring .mine:hover {
+#featuring .mine:hover {
   box-shadow: var(--shadow3);
   border: var(--border);
   transform: translateY(10px) translateX(5px);
